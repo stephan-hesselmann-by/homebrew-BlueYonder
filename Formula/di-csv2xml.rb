@@ -1,15 +1,13 @@
 class DiCsv2xml < Formula
   desc "Convert CSV to Blue Yonder Supply & Demand API compatible XML"
-  version "v2.0.0"
-  url "https://github.com/blue-yonder/di-csv2xml/archive/#{version}.tar.gz"
-  sha256 "46b6653a472036f3c77f428261106c1e14d880ab335fd7701bc4a79924f965ad"
   homepage "https://github.com/blue-yonder/di-csv2xml"
+  url "https://github.com/blue-yonder/di-csv2xml/archive/v2.0.0.tar.gz"
+  sha256 "46b6653a472036f3c77f428261106c1e14d880ab335fd7701bc4a79924f965ad"
 
   depends_on "rust" => :build
 
   def install
-    system "cargo", "build", "--bin", "di-csv2xml", "--locked", "--release"
-    bin.install "target/release/di-csv2xml"
+    system "cargo", "install", "--root", prefix, "--path", "."
   end
 
   test do
@@ -28,6 +26,7 @@ class DiCsv2xml < Formula
       \t</Record>
       </Category>
     EOS
-    assert_equal (testpath/"test.xml").read.strip, shell_output("#{bin}/di-csv2xml --category Category --input test.csv").strip
+    assert_equal (testpath/"test.xml").read.strip,
+      shell_output("#{bin}/di-csv2xml --category Category --input test.csv").strip
   end
 end
