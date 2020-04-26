@@ -26,4 +26,5 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_FILTER_AUTHOR: by-stehessel
+          MERGE_LABELS: ""
           MERGE_METHOD: squash
