@@ -12,7 +12,8 @@ jobs:
       - name: Update Homebrew formulae
         uses: dawidd6/action-homebrew-bump-formula@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # Requires personal access token
+          token: "${{ secrets.TOKEN }}"
           tap: by-stehessel/BlueYonder
           force: false
           livecheck: true
