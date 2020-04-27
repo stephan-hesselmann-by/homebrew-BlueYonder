@@ -14,6 +14,6 @@ jobs:
         with:
           # Requires personal access token
           token: "${{ secrets.TOKEN }}"
-          tap: by-stehessel/BlueYonder
+          tap: stephan-hesselmann-jdas/BlueYonder
           force: false
           livecheck: true
