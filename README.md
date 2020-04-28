@@ -4,14 +4,14 @@
 
 ## How do I install these formulae?
 
-`brew install by-stehessel/BlueYonder/<formula>`
+`brew install stephan-hesselmann-jdas/BlueYonder/<formula>`
 
-Or `brew tap by-stehessel/BlueYonder` and then `brew install <formula>`.
+Or `brew tap stephan-hesselmann-jdas/BlueYonder` and then `brew install <formula>`.
 
 Or install via URL (which will not receive updates):
 
 ```sh
-brew install https://raw.githubusercontent.com/by-stehessel/homebrew-BlueYonder/master/Formula/<formula>.rb
+brew install https://raw.githubusercontent.com/stephan-hesselmann-jdas/homebrew-BlueYonder/master/Formula/<formula>.rb
 ```
 
 ## Documentation
