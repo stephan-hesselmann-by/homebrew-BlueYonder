@@ -25,7 +25,7 @@ jobs:
         uses: "pascalgn/automerge-action@v0.8.0"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_FILTER_AUTHOR: "stephan-hesselmann-jdas"
+          MERGE_FILTER_AUTHOR: "stephan-hesselmann-by"
           MERGE_LABELS: ""
           MERGE_METHOD: "squash"
           MERGE_RETRY_SLEEP: "600000"
