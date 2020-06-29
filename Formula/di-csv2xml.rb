@@ -1,8 +1,8 @@
 class DiCsv2xml < Formula
   desc "Convert CSV to Blue Yonder Supply & Demand API compatible XML"
   homepage "https://github.com/blue-yonder/di-csv2xml"
-  url "https://github.com/blue-yonder/di-csv2xml/archive/v2.0.2.tar.gz"
-  sha256 "5b243fe6d7f9179c092068d6b252a0ed71dc71e2a80a373302dbaf6a54d19eb3"
+  url "https://github.com/blue-yonder/di-csv2xml/archive/v2.0.3.tar.gz"
+  sha256 "6990cb17882aa37e2b897495719d6680c192c92e3b034af0c8635bf0f1d7f352"
 
   depends_on "rust" => :build
 
