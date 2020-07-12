@@ -10,7 +10,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Update Homebrew formulae
-        uses: dawidd6/action-homebrew-bump-formula@v3.1
+        uses: dawidd6/action-homebrew-bump-formula@v3.1.1
         with:
           # Requires personal access token
           token: "${{ secrets.TOKEN }}"
