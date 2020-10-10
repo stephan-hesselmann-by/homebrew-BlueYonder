@@ -7,7 +7,7 @@ on:
 
 jobs:
   update-tap:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Update Homebrew formulae
         uses: dawidd6/action-homebrew-bump-formula@master
@@ -15,5 +15,5 @@ jobs:
           # Requires personal access token
           token: "${{ secrets.TOKEN }}"
           tap: stephan-hesselmann-by/BlueYonder
-          force: true
+          force: false
           livecheck: true
